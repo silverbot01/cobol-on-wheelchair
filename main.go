@@ -6,7 +6,7 @@ import (
 )
 
 func cgiHandler(w http.ResponseWriter, r *http.Request) {
-	handler := cgi.Handler{Path: "the.cow"}
+	handler := cgi.Handler{Path: "the.exe"}
 	handler.ServeHTTP(w, r)
 }
 

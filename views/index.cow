@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>
-			Hello CoW.
+			Hello From Cobol.
 		</title>
 		<link rel="stylesheet" href="https://unpkg.com/missing.css@1.1.2">
 		<script src="https://unpkg.com/htmx.org@2.0.0"></script>
