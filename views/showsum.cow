@@ -1,14 +1,16 @@
-<html>
+<!-- <html>
 	<head>
 		<title>
 			Sum example.
 		</title>
+		<link rel="stylesheet" href="https://unpkg.com/missing.css@1.1.2">
 	</head>
-	<body>
+	<body> -->
 
 		<h2> 
 			{{number1}} + {{number2}} = {{number3}}		
 		</h2>	
 
-	</body>
-</html>		
+	<!-- </body>
+	<script src="https://unpkg.com/htmx.org@2.0.0"></script>
+</html>	-->	

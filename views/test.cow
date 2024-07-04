@@ -1,0 +1,12 @@
+<!-- <html>
+    <head>
+        <title>Test</title>
+        <link rel="stylesheet" href="https://unpkg.com/missing.css@1.1.2">
+    </head>
+    
+    <body> -->
+        <h1>TEST</h1>
+        <p>This is a {{testvalue}} test!</p>
+    <!-- </body>
+    <script src="https://unpkg.com/htmx.org@2.0.0"></script>
+</html> -->
