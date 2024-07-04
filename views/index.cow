@@ -9,7 +9,7 @@
 	<body class="f-col">
 		<div></div>
 		<div>
-			<img src='images/logo.png' hspace=30 align=left>
+			<img src='/static/images/logo.png' hspace=30 align=left>
 
 			<h2>Cobol on Wheelchair says hello!</h2>
 			<P>
