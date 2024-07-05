@@ -1,12 +1,20 @@
 package main
 
 import (
+	"log"
 	"net/http"
 	"net/http/cgi"
 )
 
 func cgiHandler(w http.ResponseWriter, r *http.Request) {
 	handler := cgi.Handler{Path: "the.exe"}
+	handler.Logger = nil
+	var tabstring []byte = make([]byte, 0, 30)
+	diff := 30 - len(r.RequestURI)
+	for i := 0; i < diff; i++ {
+		tabstring = append(tabstring, ' ')
+	}
+	log.Println("\t:: " + r.RemoteAddr + "\t:: " + r.Method + "\t:: " + r.RequestURI + string(tabstring) + ":: FROM :: " + r.Host)
 	handler.ServeHTTP(w, r)
 }
 
@@ -15,5 +23,7 @@ func main() {
 
 	http.Handle("/static/*", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 
-	http.ListenAndServe("localhost:8080", nil)
+	if err := http.ListenAndServe("localhost:8080", nil); err != nil {
+		log.Fatal(err)
+	}
 }

@@ -82,8 +82,11 @@
         working-storage section.
 
         78  name-count      value 34.
+        
         01  name-index      pic 99 usage comp-5.
+
         01  value-string    pic x(256).
+
         01  environment-names.
             02  name-strings.
                 03  filler    pic x(20) value 'AUTH_TYPE'.
@@ -285,4 +288,3 @@
         end program checkquery.
 
         end program cow.
-        
